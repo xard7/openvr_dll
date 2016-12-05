@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="openvr_dll" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/openvr_dll" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-std=c++11" />
+					<Add option="-DDEF_WIN32" />
+					<Add directory="headers" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="headers/openvr.h" />
+		<Unit filename="headers/openvr_api.cs" />
+		<Unit filename="headers/openvr_api.json" />
+		<Unit filename="headers/openvr_capi.h" />
+		<Unit filename="headers/openvr_driver.h" />
+		<Unit filename="ivrclientcore.h" />
+		<Unit filename="json/json-forwards.h" />
+		<Unit filename="json/json.h" />
+		<Unit filename="jsoncpp.cpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Unit filename="openvr_api_public.cpp" />
+		<Unit filename="vrcommon/dirtools.h" />
+		<Unit filename="vrcommon/dirtools_public.cpp" />
+		<Unit filename="vrcommon/envvartools.h" />
+		<Unit filename="vrcommon/envvartools_public.cpp" />
+		<Unit filename="vrcommon/hmderrors.h" />
+		<Unit filename="vrcommon/hmderrors_public.cpp" />
+		<Unit filename="vrcommon/pathtools.h" />
+		<Unit filename="vrcommon/pathtools_public.cpp" />
+		<Unit filename="vrcommon/sharedlibtools.h" />
+		<Unit filename="vrcommon/sharedlibtools_public.cpp" />
+		<Unit filename="vrcommon/strtools.h" />
+		<Unit filename="vrcommon/strtools_public.cpp" />
+		<Unit filename="vrcommon/vrpathregistry.h" />
+		<Unit filename="vrcommon/vrpathregistry_public.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,14 @@
+EXPORTS
+    DllMain@12 @1
+    SomeFunction @2
+    VR_GetGenericInterface @3
+    VR_GetInitToken @4
+    VR_GetStringForHmdError @5
+    VR_GetVRInitErrorAsEnglishDescription @6
+    VR_GetVRInitErrorAsSymbol @7
+    VR_InitInternal @8
+    VR_IsHmdPresent @9
+    VR_IsInterfaceVersionValid @10
+    VR_IsRuntimeInstalled @11
+    VR_RuntimePath @12
+    VR_ShutdownInternal @13
